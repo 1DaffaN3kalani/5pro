@@ -1,0 +1,23 @@
+elif "Pp @" in msg.text:
+              if msg.from_ in admin:
+                key = eval(msg.contentMetadata["MENTION"])
+                key["MENTIONEES"][0]["M"]
+                targets = []
+                for x in key["MENTIONEES"]:
+                    targets.append(x["M"])
+                if targets == []:
+                    cl.sendText(msg.to,"Kontak tidak ditemukan,mungkin kontak yg dituju tidak mempunyai muka")
+                else:
+                    for target in targets:
+                      try:
+                        contact = cl.getContact(target)
+                        path = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                        cl.sendImageWithUrl(msg.to, path)
+                      except Exception as e:
+                        raise e
+
+if op.type == 17:
+          if op.param2 in Bots:
+            return
+          ginfo = cl.getGroup(op.param1)
+          random.choice(KAC).sendText(op.param1, "👥 WELCOME TO THE GROUP 👥\n" + "👉" + str(ginfo.name) + "👈" + "\n" + "👑 GROUP OWNER CREATOR 👑" + "\n" + "👉" + ginfo.creator.displayName + "👈" + "\n\n" + "THIS GROUP HAS BEEN PROTECT BY" + "\n⭐||124D15T1 T34M B0T PR0T3CT||⭐")
