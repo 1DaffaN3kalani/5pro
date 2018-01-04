@@ -515,7 +515,7 @@ class LINE:
 
       prof = self.getProfile()
 
-      print("124D15T1 T34M B0T")
+      print("R4D15T1 T34M B0T")
       print("mid -> " + prof.mid)
       print("Nama -> " + prof.displayName)
       print("Token -> " + self.authToken)
