@@ -675,7 +675,7 @@ def bot(op):
                 cl.sendText(msg.to, "☞「 Speed SelfBot 」\n☞ Type: Speed\n☞ Speed : %sseconds" % (elapsed_time))
             elif msg.text.lower() == 'crash':
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': "u149b2217af70616138a1c8a59bfcf8a8',"}
+                msg.contentMetadata = {'mid': "u0f4cbccff2b03754d07d8db8707023f6',"}
                 cl.sendMessage(msg)
             elif msg.text.lower() == 'me':
                 msg.contentType = 13
